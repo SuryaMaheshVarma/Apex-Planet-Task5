@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surya Mahesh Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>👨‍💻 Surya Mahesh</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#todo">To-Do</a></li>
+          <li><a href="#products">🛍️ Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a passionate web developer with experience in creating dynamic, responsive web applications using HTML, CSS, and JavaScript. This portfolio is my capstone project as part of the Apex Internship.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <img src="https://via.placeholder.com/400x200" alt="Project Preview" loading="lazy">
+      <p>This site demonstrates my ability to build a full-stack frontend app with performance optimization and responsiveness.</p>
+    </section>
+
+    <section id="todo">
+      <h2>📝 To-Do List</h2>
+      <div class="todo-box">
+        <input type="text" id="taskInput" placeholder="Enter a task" />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+
+    <section id="products">
+      <h2>🛒 Product Listing with Filters</h2>
+      <input type="text" id="productFilter" placeholder="Search for a product..." oninput="filterProducts()" />
+      <ul id="productList">
+        <li>📱 Smartphone</li>
+        <li>💻 Laptop</li>
+        <li>⌚ Smartwatch</li>
+        <li>🎧 Headphones</li>
+        <li>📷 Camera</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>📩 Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Surya Mahesh | Apex Internship Final Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
